@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
-  const navListRef = document.querySelector(".class-navigation-list");
-  const headerRef = document.querySelector(".class-header");
-  const navigationRef = document.querySelector(".class-navigation");
+  const navListRef = document.querySelector(".q-a-navigation-list");
+  const headerRef = document.querySelector(".q-a-header");
+  const navigationRef = document.querySelector(".q-a-navigation");
 
   menuBtnRef.addEventListener("click", () => {
     menuBtnRef.classList.toggle("is-open");
@@ -20,19 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   );
 });
-
-function toggleAnswer(element) {
-  const answer = element.nextElementSibling;
-  const buttonImg = element.querySelector(".class-toggle-button img");
-
-  if (answer.style.display === "none" || answer.style.display === "") {
-    answer.style.display = "block";
-    buttonImg.src = "/img/faq/arrow.png";
-  } else {
-    answer.style.display = "none";
-    buttonImg.src = "/img/faq/icon.png";
-  }
-}
 
 document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("cookie-popup");
